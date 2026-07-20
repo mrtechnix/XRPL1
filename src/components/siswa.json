@@ -1,8 +1,10 @@
 [
     {
+        "image": "/angota/Dany.jpeg",
         "nama": "danydev"
     },
     {
-        "nama": "rama"
+        "image": "/angota/Arya.jpeg",
+        "nama": "Arya Nasrullah H."
     }
 ]

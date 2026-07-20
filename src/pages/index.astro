@@ -48,7 +48,7 @@ import siswa from "../components/siswa.json";
     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
       {siswa.map(s => (
         <div class="bg-charcoal-800 p-4 rounded-lg text-center" data-aos="fade-down">
-          <img src={'https://placehold.co/800x600/png'} alt={s.nama} class="w-20 h-20 rounded-full mx-auto object-cover border-2 border-charcoal-600" />
+          <img src={ s.image || 'https://placehold.co/800x600/png'} alt={s.nama} class="w-20 h-20 rounded-full mx-auto object-cover border-2 border-charcoal-600" />
           <p class="mt-2 text-charcoal-100 font-medium text-sm">{s.nama}</p>
         </div>
       ))}
