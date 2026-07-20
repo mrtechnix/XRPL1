@@ -12,7 +12,7 @@ const base = import.meta.env.BASE_URL;
   <!-- Hero Section -->
   <section
     class="relative h-screen flex items-center justify-center bg-cover bg-center"
-    style={`background-image: url('${base}fotbar.jpeg');`}
+    style={`background-image: url('${base}/fotbar.jpeg');`}
     data-aos="zoom-in"
   >
     <div class="absolute inset-0 bg-black/60"></div>
@@ -62,7 +62,7 @@ const base = import.meta.env.BASE_URL;
           data-aos="fade-down"
         >
           <img
-            src={s.image ? `${base}${s.image}` : 'https://placehold.co/800x600/png'}
+            src={s.image ? `${base}/${s.image}` : 'https://placehold.co/800x600/png'}
             alt={s.nama}
             class="w-20 h-20 rounded-full mx-auto object-cover border-2 border-charcoal-600"
           />
@@ -81,17 +81,17 @@ const base = import.meta.env.BASE_URL;
     </h2>
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
       <img
-        src={`${base}momen1.jpg`}
+        src={`${base}/momen1.jpg`}
         class="rounded-lg object-cover w-full h-48"
         alt="Kegiatan 1"
       />
       <img
-        src={`${base}momen2.jpg`}
+        src={`${base}/momen2.jpg`}
         class="rounded-lg object-cover w-full h-48"
         alt="Kegiatan 2"
       />
       <img
-        src={`${base}momen3.jpg`}
+        src={`${base}/momen3.jpg`}
         class="rounded-lg object-cover w-full h-48"
         alt="Kegiatan 3"
       />
