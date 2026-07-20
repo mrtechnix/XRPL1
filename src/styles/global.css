@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@plugin "daisyui";
+@theme {
+  --color-charcoal-50: #f5f5f5;   /* jika nanti butuh versi terang */
+  --color-charcoal-100: #e0e0e0;
+  --color-charcoal-600: #333333;  /* border */
+  --color-charcoal-700: #2A2A2A;  /* hover */
+  --color-charcoal-800: #1E1E1E;  /* kartu */
+  --color-charcoal-900: #121212;  /* latar utama */
+  --color-accent: #FFD700; /* emas */
+
+  --font-family-sans: 'Poppins', sans-serif;
+}
