@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+const base = import.meta.env.BASE_URL;
+
+// Daftar foto, bisa ditambah sesuai kebutuhan
+const galeri = [
+  { src: "/momen1.jpg", alt: "Kegiatan 1" },
+  { src: "/momen2.jpg", alt: "Kegiatan 2" },
+  { src: "/momen3.jpg", alt: "Kegiatan 3" },
+  { src: "/momen4.jpg", alt: "Kegiatan 4" },
+  { src: "/momen5.jpg", alt: "Kegiatan 5" },
+];
+---
+
+<Layout>
+  <section class="max-w-6xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold text-accent mb-8 text-center">Momen Kebersamaan</h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      {galeri.map((item, index) => (
+        <a 
+          href={`${base}${item.src}`} 
+          data-lightbox="galeri" 
+          data-title={item.alt}
+          data-aos="fade-up" 
+          data-aos-delay={index * 50}
+        >
+          <img 
+            src={`${base}${item.src}`} 
+            alt={item.alt}
+            class="w-full h-48 object-cover border border-charcoal-600 hover:border-accent transition-colors"
+          />
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>
+
+<!-- Inisialisasi Lightbox2 -->
+<script>
+  import 'lightbox2/dist/css/lightbox.min.css';
+  import lightbox from 'lightbox2';
+</script>

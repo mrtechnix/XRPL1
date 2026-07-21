@@ -13,14 +13,21 @@ module.exports = {
           900: '#121212',
         },
         accent: '#FFD700',
+      },
+      borderRadius: {
+        'sm': '0.125rem',
+        'md': '0.25rem',
+        'lg': '0.375rem',
+        'xl': '0.5rem',
+      },
+      boxShadow: {
+        'none': 'none',
       }
     }
   },
-  plugins: [
-    require('daisyui'),
-  ],
-
+  plugins: [require('daisyui')],
   daisyui: {
     themes: false,
+    logs: false,
   },
 }

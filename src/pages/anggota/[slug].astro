@@ -1,0 +1,41 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import siswa from "../../components/siswa.json";
+
+export function getStaticPaths() {
+  return siswa.map(s => ({
+    params: { slug: s.slug },
+    props: { siswa: s }
+  }));
+}
+
+const { siswa } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout>
+  <div class="max-w-2xl mx-auto px-4 py-12">
+    <img 
+      src={`${base}/${siswa.image}`} 
+      alt={siswa.nama}
+      class="w-40 h-40 object-cover border border-charcoal-600 mb-6"
+    />
+    <h1 class="text-3xl font-bold text-accent">{siswa.nama}</h1>
+    <p class="mt-2 text-charcoal-300">{siswa.deskripsi}</p>
+
+    {siswa.sosmed && Object.keys(siswa.sosmed).length > 0 && (
+      <div class="mt-4 flex gap-4">
+        {siswa.sosmed.github && (
+          <a href={siswa.sosmed.github} target="_blank" class="text-accent underline">GitHub</a>
+        )}
+        {siswa.sosmed.instagram && (
+          <a href={siswa.sosmed.instagram} target="_blank" class="text-accent underline">Instagram</a>
+        )}
+      </div>
+    )}
+
+    <a href={`${base}/anggota`} class="inline-block mt-6 text-charcoal-400 hover:text-accent transition-colors">
+      &larr; Kembali ke daftar anggota
+    </a>
+  </div>
+</Layout>

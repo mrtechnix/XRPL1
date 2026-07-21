@@ -3,14 +3,26 @@
 @tailwind utilities;
 
 @plugin "daisyui";
-@theme {
-  --color-charcoal-50: #f5f5f5;   /* jika nanti butuh versi terang */
-  --color-charcoal-100: #e0e0e0;
-  --color-charcoal-600: #333333;  /* border */
-  --color-charcoal-700: #2A2A2A;  /* hover */
-  --color-charcoal-800: #1E1E1E;  /* kartu */
-  --color-charcoal-900: #121212;  /* latar utama */
-  --color-accent: #FFD700; /* emas */
 
+@theme {
+  --color-charcoal-50: #f5f5f5;
+  --color-charcoal-100: #e0e0e0;
+  --color-charcoal-600: #333333;
+  --color-charcoal-700: #2A2A2A;
+  --color-charcoal-800: #1E1E1E;
+  --color-charcoal-900: #121212;
+  --color-accent: #FFD700;
   --font-family-sans: 'Poppins', sans-serif;
+}
+
+/* Override DaisyUI agar flat: hilangkan shadow dan radius berlebih */
+:root {
+  --rounded-box: 0.25rem;
+  --rounded-btn: 0.25rem;
+  --shadow-2xl: none;
+  --shadow-xl: none;
+  --shadow-lg: none;
+  --shadow-md: none;
+  --shadow: none;
+  --shadow-sm: none;
 }

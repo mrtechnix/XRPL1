@@ -1,0 +1,54 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="max-w-2xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold text-accent mb-6">Kontak Kami</h1>
+    <div class="space-y-6">
+      <div class="border border-charcoal-600 p-4">
+        <p class="text-charcoal-300">Email resmi:</p>
+        <a href="mailto:study@danydevid.my.id" class="text-accent text-lg">study@danydevid.my.id</a>
+      </div>
+
+      <!-- Form sederhana dengan Alpine.js -->
+      <form 
+        class="border border-charcoal-600 p-4 space-y-4"
+        x-data="{ nama: '', pesan: '', terkirim: false }"
+        @submit.prevent="terkirim = true"
+      >
+        <div>
+          <label class="block text-sm text-charcoal-300 mb-1">Nama</label>
+          <input 
+            type="text" 
+            x-model="nama"
+            required
+            class="w-full bg-charcoal-800 border border-charcoal-600 p-2 text-charcoal-100 focus:border-accent outline-none"
+            placeholder="Nama Anda"
+          />
+        </div>
+        <div>
+          <label class="block text-sm text-charcoal-300 mb-1">Pesan</label>
+          <textarea 
+            x-model="pesan"
+            required
+            rows="4"
+            class="w-full bg-charcoal-800 border border-charcoal-600 p-2 text-charcoal-100 focus:border-accent outline-none"
+            placeholder="Tulis pesan Anda..."
+          ></textarea>
+        </div>
+        <button 
+          type="submit"
+          class="bg-accent text-charcoal-900 px-6 py-2 font-semibold hover:opacity-90 transition-opacity"
+        >
+          Kirim Pesan
+        </button>
+
+        <!-- Notifikasi sukses -->
+        <p x-show="terkirim" class="text-green-400 mt-2">
+          Pesan terkirim! (simulasi)
+        </p>
+      </form>
+    </div>
+  </section>
+</Layout>

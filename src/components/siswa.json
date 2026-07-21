@@ -1,10 +1,16 @@
 [
     {
+        "slug": "danydev",
         "image": "/angota/Dany.jpeg",
-        "nama": "danydev"
+        "nama": "Dany Saputra",
+        "deskripsi": "Seorang remaja yang suka coding dan rajin belajar",
+        "sosmed": { "github": "https://github.com/mrtechnix" }
     },
     {
+        "slug": "arya-nasrullah",
         "image": "/angota/Arya.jpeg",
-        "nama": "Arya Nasrullah H."
+        "nama": "Arya Nasrullah H.",
+        "deskripsi": "Ketua kelas pecint ateknologi, desain da n musik.",
+        "sosmed": { "instagram": "https://instagram.com/arya_nas" }
     }
 ]

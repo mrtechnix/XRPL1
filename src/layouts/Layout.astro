@@ -1,26 +1,36 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/src/assets/logo.jpeg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-		<link 
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" 
-			rel="stylesheet"
-		/>
-	</head>
-	<body class="bg-charcoal-800 text-charcoal-100 font-sans" >
-		<slot />
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
 
-		<script>
-			import AOS from 'aos';
-		    import 'aos/dist/aos.css';
-			AOS.init({
-				duration: 1000,
-				once: false,
-			});
-		</script>
-	</body>
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/src/assets/logo.jpeg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>X RPL 1 – SMKN 1 Pasuruan</title>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" 
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-charcoal-900 text-charcoal-100 font-sans">
+    <Navbar />
+    <main class="pt-20"> <!-- offset untuk navbar fixed -->
+      <slot />
+    </main>
+    <Footer />
+
+    <!-- AOS -->
+    <script>
+      import AOS from 'aos';
+      import 'aos/dist/aos.css';
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+  </body>
 </html>
