@@ -10,7 +10,7 @@
         "slug": "arya-nasrullah",
         "image": "/angota/Arya.jpeg",
         "nama": "Arya Nasrullah H.",
-        "deskripsi": "Ketua kelas pecint ateknologi, desain da n musik.",
+        "deskripsi": "Ketua kelas pecint ateknologi, desain dan musik.",
         "sosmed": { "instagram": "https://instagram.com/arya_nas" }
     },
     {
@@ -19,7 +19,15 @@
         "nama": "Rahmat Bintang A.K",
         "deskripsi": "Seorang anak remaja yang hobi bermain sepeda,badminton dan bermain game.",
         "sosmed": {
-          "instagram": "https://www.instagram.com/bntang.tk?igsh=Y2FtMngzOTRnZGFs"
+          "instagram": "https://www.instagram.com/bntang.tk?igsh=Y2FtMngzOTRnZGFs",
+          "tik_tok": "https://www.tiktok.com/@bintangg8__8?_r=1&_t=ZS-98Eof8rndUi"
         }
+    },
+    {
+        "slug": "moch-naufal",
+        "image": "/angota/mochnaufal.jpeg",
+        "nama": "Mochammad Naufal Azzauhari",
+        "deskripsi": "seorang anak ganteng yang suka olahraga bola volly",
+        "sosmed": { "instagram": "https://www.instagram.com/nflazzhr?igsh=aDc5czlidjl5MjVk" }
     }
 ]
