@@ -12,5 +12,14 @@
         "nama": "Arya Nasrullah H.",
         "deskripsi": "Ketua kelas pecint ateknologi, desain da n musik.",
         "sosmed": { "instagram": "https://instagram.com/arya_nas" }
+    },
+    {
+        "slug": "rahmat-bintang-ak",
+        "image": "/angota/rahmatbintang.jpg",
+        "nama": "Rahmat Bintang A.K",
+        "deskripsi": "Seorang anak remaja yang hobi bermain sepeda,badminton dan bermain game.",
+        "sosmed": {
+          "instagram": "https://www.instagram.com/bntang.tk?igsh=Y2FtMngzOTRnZGFs"
+        }
     }
 ]
